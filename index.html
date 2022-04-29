@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody&family=BIZ+UDGothic:wght@700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="search-form">
+        <input
+          class="changeCityBox"
+          id="change-city"
+          type="search"
+          autofocus="on"
+          autocomplete="off"
+          placeholder="Change city               🔍"
+        />
+        <button class="searchSubmit" type="submit">Search</button>
+        <button class="currentLocation" id="current-location">
+          Current location
+        </button>
+      </form>
+      <br />
+      <img src="images/icon.png" />
+      <h1 id="city"></h1>
+      <br />
+      <p class="currentDateTime" id="current-date">Sunday 03:00</p>
+      <br />
+      <h2>
+        <span id="current-temperature"></span>°</span><small>F</small></span>
+        <div class="cloudy" id="cloudy"></div>
+        <div class="humidity">Humidity: <span id="humidity"></span>%</div>
+        <div class="wind"> Wind: <span id="wind"></span>mph
+        </div>
+      </h2>
+      <h4>📅 5-DAY FORECAST</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Today</strong></td>
+            <td>
+              <big>🌧️</big> <br />
+              <small class="seventy">70%</small>
+            </td>
+            <td>H: 56° L: 41°</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Monday</strong></td>
+            <td>
+              <big>🌧️</big> <br />
+              <small class="fifty"> 50%</small>
+            </td>
+            <td>H: 50° L: 40°</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Tuesday</strong></td>
+            <td><big>⛅</big></td>
+            <td>H: 54° L: 37°</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Wednesday</strong></td>
+            <td><big>⛅</big></td>
+            <td>H: 64° L: 33°</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Thursday</strong></td>
+            <td><big>⛅</big></td>
+            <td>H: 74° L: 45°</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td><strong>Friday</strong></td>
+            <td>
+              <big>🌧️</big> <br />
+              <small class="forty">40%</small>
+            </td>
+            <td>H: 59° L: 82°</td>
+          </tr>
+        </tbody>
+      </table>
+      <script
+        src="src/index.js"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
