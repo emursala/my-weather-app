@@ -43,11 +43,15 @@
       <p class="currentDateTime" id="current-date">Sunday 03:00</p>
       <br />
       <h2>
-        <span id="current-temperature"></span>°</span><small>F</small></span>
+        <span id="current-temperature"></span
+        ><small class="fahrenheitCelsius">
+          <a href="#" id="fahrenheit">°F</a>|<a href="#" id="celsius"
+            >°C</a
+          ></small
+        >
         <div class="cloudy" id="cloudy"></div>
         <div class="humidity">Humidity: <span id="humidity"></span>%</div>
-        <div class="wind"> Wind: <span id="wind"></span>mph
-        </div>
+        <div class="wind">Wind: <span id="wind"></span>mph</div>
       </h2>
       <h4>📅 5-DAY FORECAST</h4>
       <table class="table">
@@ -105,11 +109,15 @@
         </tbody>
       </table>
       <p class="openSource">
-        <a href="https://github.com/emursala/my-weather-app" target="_blank"  rel="noreferrer">Open-source code</a>
-        by Esmeralda Guevara</p>
-      <script
-        src="src/index.js"
-      ></script>
+        <a
+          href="https://github.com/emursala/my-weather-app"
+          target="_blank"
+          rel="noreferrer"
+          >Open-source code</a
+        >
+        by Esmeralda Guevara
+      </p>
+      <script src="src/index.js"></script>
     </div>
   </body>
 </html>
