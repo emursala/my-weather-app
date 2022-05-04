@@ -126,5 +126,6 @@ input:hover {
   font-family: "Raleway", sans-serif;
 }
 .icon {
-  width: 80px;
+  width: 100px;
+  top: -35px;
 }
