@@ -1,3 +1,28 @@
+function weather(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#current-temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#cloudy").innerHTML =
+    response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+}
+
+function search(city) {
+  let apiKey = "993af96e9543b078265c47b2bab8efae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(weather);
+}
+
 let now = new Date();
 let days = [
   "Sunday",
@@ -21,25 +46,6 @@ let day = days[now.getDay()];
 
 let dateTime = document.querySelector("#current-date");
 dateTime.innerHTML = `${day} ${hours}:${minutes}`;
-
-function weather(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#current-temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#cloudy").innerHTML =
-    response.data.weather[0].description;
-}
-
-function search(city) {
-  let apiKey = "993af96e9543b078265c47b2bab8efae";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(weather);
-}
 
 function citySearch(event) {
   event.preventDefault();

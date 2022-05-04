@@ -22,101 +22,105 @@
   </head>
   <body>
     <div class="container">
-      <form class="form" id="search-form">
-        <input
-          class="changeCityBox"
-          id="change-city"
-          type="search"
-          autofocus="on"
-          autocomplete="off"
-          placeholder="Change city               🔍"
-        />
-        <button class="searchSubmit" type="submit">Search</button>
-        <button class="currentLocation" id="current-location">
-          Current location
-        </button>
-      </form>
-      <br />
-      <img src="images/icon.png" />
-      <h1 id="city"></h1>
-      <br />
-      <p class="currentDateTime" id="current-date"></p>
-      <br />
-      <h2>
-        <span id="current-temperature"></span
-        ><small class="fahrenheitCelsius">
-          <a href="#" id="fahrenheit">°F</a> |
-          <a href="#" id="celsius">°C</a></small
-        >
-        <div class="cloudy" id="cloudy"></div>
-        <div class="humidity">Humidity: <span id="humidity"></span>%</div>
-        <div class="wind">Wind: <span id="wind"></span>mph</div>
-      </h2>
-      <h4>📅 5-DAY FORECAST</h4>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Today</strong></td>
-            <td>
-              <big>🌧️</big> <br />
-              <small class="seventy">70%</small>
-            </td>
-            <td>H: 56° L: 41°</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Monday</strong></td>
-            <td>
-              <big>🌧️</big> <br />
-              <small class="fifty"> 50%</small>
-            </td>
-            <td>H: 50° L: 40°</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Tuesday</strong></td>
-            <td><big>⛅</big></td>
-            <td>H: 54° L: 37°</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Wednesday</strong></td>
-            <td><big>⛅</big></td>
-            <td>H: 64° L: 33°</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Thursday</strong></td>
-            <td><big>⛅</big></td>
-            <td>H: 74° L: 45°</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td><strong>Friday</strong></td>
-            <td>
-              <big>🌧️</big> <br />
-              <small class="forty">40%</small>
-            </td>
-            <td>H: 59° L: 82°</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="openSource">
-        <a
-          href="https://github.com/emursala/my-weather-app"
-          target="_blank"
-          rel="noreferrer"
-          >Open-source code</a
-        >
-        by Esmeralda Guevara
-      </p>
-      <script src="src/index.js"></script>
+      <div class="wrapper">
+        <form class="form" id="search-form">
+          <input
+            class="changeCityBox"
+            id="change-city"
+            type="search"
+            autofocus="on"
+            autocomplete="off"
+            placeholder="Change city               🔍"
+          />
+          <button class="searchSubmit" type="submit">Search</button>
+          <button class="currentLocation" id="current-location">
+            Current location
+          </button>
+        </form>
+        <br />
+        <img src="images/icon.png" alt="weather ping" />
+        <h1 id="city"></h1>
+        <br />
+        <div>
+          <p class="currentDateTime" id="current-date"></p>
+        </div>
+        <h2>
+          <span id="current-temperature"></span
+          ><small class="fahrenheitCelsius">
+            <a href="#" id="fahrenheit">°F</a> |
+            <a href="#" id="celsius">°C</a>
+          </small>
+          <img src="images/sun.png" alt="sunny icon" class="icon" id="icon" />
+          <div class="cloudy" id="cloudy"></div>
+          <div class="humidity">Humidity: <span id="humidity"></span>%</div>
+          <div class="wind">Wind: <span id="wind"></span>mph</div>
+        </h2>
+        <h4>📅 5-DAY FORECAST</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Today</strong></td>
+              <td>
+                <big>🌧️</big> <br />
+                <small class="seventy">70%</small>
+              </td>
+              <td>H: 56° L: 41°</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Monday</strong></td>
+              <td>
+                <big>🌧️</big> <br />
+                <small class="fifty"> 50%</small>
+              </td>
+              <td>H: 50° L: 40°</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Tuesday</strong></td>
+              <td><big>⛅</big></td>
+              <td>H: 54° L: 37°</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Wednesday</strong></td>
+              <td><big>⛅</big></td>
+              <td>H: 64° L: 33°</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Thursday</strong></td>
+              <td><big>⛅</big></td>
+              <td>H: 74° L: 45°</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><strong>Friday</strong></td>
+              <td>
+                <big>🌧️</big> <br />
+                <small class="forty">40%</small>
+              </td>
+              <td>H: 59° L: 82°</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="openSource">
+          <a
+            href="https://github.com/emursala/my-weather-app"
+            target="_blank"
+            rel="noreferrer"
+            >Open-source code</a
+          >
+          by Esmeralda Guevara
+        </p>
+        <script src="src/index.js"></script>
+      </div>
     </div>
   </body>
 </html>

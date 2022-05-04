@@ -19,6 +19,8 @@ h2 {
   display: inline-table;
   color: #596aca;
   background-color: #c8ede6;
+  position: relative;
+  top: -35px;
 }
 h4 {
   text-align: left;
@@ -100,10 +102,14 @@ input:hover {
 }
 .cloudy {
   font-size: 35px;
+  position: relative;
+  top: -20px;
 }
 .humidity,
 .wind {
   font-size: 20px;
+  position: relative;
+  top: -25px;
 }
 .currentDateTime {
   font-size: 28px;
@@ -114,7 +120,12 @@ input:hover {
 }
 .fahrenheitCelsius {
   font-size: 18px;
+  position: relative;
+  top: -25px;
 }
 .openSource {
   font-family: "Raleway", sans-serif;
+}
+.icon {
+  width: 80px;
 }
