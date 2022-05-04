@@ -51,3 +51,19 @@ let formInput = document.querySelector("#search-form");
 formInput.addEventListener("submit", citySearch);
 
 search("Portland");
+
+function fahrenheitClick(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML = 46;
+}
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", fahrenheitClick);
+
+function celsiusClick(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML = 8;
+}
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", celsiusClick);
