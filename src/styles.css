@@ -147,11 +147,8 @@ input:hover {
     rgb(137, 191, 221) 11.2%,
     rgb(150, 144, 204) 100.2%
   );
-  border: 3px solid #aacac4;
-  border-top-left-radius: 50% 20px;
-  border-top-right-radius: 50% 20px;
-  border-bottom-left-radius: 50% 20px;
-  border-bottom-right-radius: 50% 20px;
+  border: 2px solid #aacac4;
+  border-radius: 50%;
 }
 .fahrenheitLink {
   color: #000;
