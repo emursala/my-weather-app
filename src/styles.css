@@ -5,34 +5,27 @@ img {
   width: 150px;
   display: block;
   margin: 0 auto;
+  margin-top: -15px;
 }
-h1 {
-  display: inline-table;
-  text-align: center;
-  font-size: 80px;
-  font-family: "Raleway", sans-serif;
-}
-h2 {
-  width: 20%;
-  font-size: 60px;
-  font-family: "Raleway", sans-serif;
-  display: inline-table;
-  color: #596aca;
-  background-color: #c8ede6;
-  position: relative;
-  border: 0.5px solid #fff;
-  border-radius: 10px;
-}
+
 h4 {
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  position: relative;
+  top: -225px;
+  right: -130px;
 }
 table {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
+  max-width: 80%;
+  position: relative;
+  top: -220px;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(
     109.6deg,
     rgb(137, 191, 221) 11.2%,
@@ -43,7 +36,12 @@ td {
   text-align: center;
   margin: 0 auto;
   position: relative;
-  left: -47px;
+  left: -28px;
+}
+tr,
+th {
+  text-align: center;
+  margin: 0 auto;
 }
 button:hover {
   cursor: pointer;
@@ -61,6 +59,49 @@ input:hover {
 :hover::-webkit-input-placeholder {
   color: #596aca;
 }
+.city {
+  display: inline-table;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  margin-top: -15px;
+}
+.temperatureHeading {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  background-color: #c8ede6;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  position: relative;
+  left: -120px;
+  padding: 15px;
+}
+.humidityWindHeading {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  background-color: #c8ede6;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  position: relative;
+  left: -120px;
+  bottom: -10px;
+  padding: 30px;
+}
+.weatherDescription {
+  width: 20%;
+  height: 250px;
+  background-color: #c8ede6;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  right: -120px;
+  top: -240px;
+  padding: 25px;
+}
 .searchSubmit,
 .currentLocation {
   background-color: #8294da;
@@ -74,10 +115,13 @@ input:hover {
 }
 .form {
   font-size: 28px;
+  max-width: 80%;
   text-align: center;
   padding: 18px;
   display: block;
   margin: 0 auto;
+  border: 1px solid #596aca;
+  border-radius: 12px;
   background: linear-gradient(
     109.6deg,
     rgb(137, 191, 221) 11.2%,
@@ -93,11 +137,15 @@ input:hover {
   background-color: #c8ede6;
 }
 .container {
-  padding-top: 10px;
   display: block;
   text-align: center;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 78%;
+}
+.wrapper {
+  display: block;
+  text-align: center;
+  margin: 0px 70px 150px 70px;
 }
 .seventy {
   color: rgb(17, 159, 224);
@@ -110,14 +158,18 @@ input:hover {
 }
 .cloudy {
   font-size: 35px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  color: #596aca;
+  text-align: center;
   position: relative;
   top: -36px;
 }
 .humidity,
 .wind {
-  font-size: 20px;
-  position: relative;
-  top: -25px;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  color: #596aca;
 }
 .currentDateTime {
   font-size: 28px;
@@ -128,20 +180,29 @@ input:hover {
   border: 0.5px solid #fff;
   border-radius: 10px;
 }
+.currentTemperature {
+  position: relative;
+  top: -10px;
+  color: #596aca;
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+}
 .fahrenheitCelsius {
   font-size: 18px;
   position: relative;
-  top: -25px;
+  top: -45px;
 }
 .openSource {
+  position: relative;
+  top: -330px;
   font-family: "Raleway", sans-serif;
+  font-size: 15px;
 }
 .icon {
   width: 115px;
   position: relative;
   top: -20px;
   margin: 25px auto;
-  padding: 5px;
   background: linear-gradient(
     109.6deg,
     rgb(137, 191, 221) 11.2%,
