@@ -135,3 +135,10 @@ input:hover {
   width: 100px;
   top: -35px;
 }
+.fahrenheitLink {
+  color: #000;
+  cursor: default;
+}
+.fahrenheitLink:hover {
+  text-decoration: none;
+}
