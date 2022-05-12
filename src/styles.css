@@ -17,8 +17,8 @@ h4 {
   right: -130px;
 }
 table {
-  font-size: 30px;
   font-family: "Raleway", sans-serif;
+  text-align: center;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   max-width: 80%;
@@ -33,15 +33,7 @@ table {
   );
 }
 td {
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-  left: -28px;
-}
-tr,
-th {
-  text-align: center;
-  margin: 0 auto;
+  font-size: 28px;
 }
 button:hover {
   cursor: pointer;
@@ -91,7 +83,7 @@ input:hover {
 }
 .weatherDescription {
   width: 20%;
-  height: 250px;
+  height: 255px;
   background-color: #c8ede6;
   border: 0.5px solid #fff;
   border-radius: 10px;
@@ -100,7 +92,6 @@ input:hover {
   position: relative;
   right: -120px;
   top: -240px;
-  padding: 25px;
 }
 .searchSubmit,
 .currentLocation {
@@ -147,23 +138,12 @@ input:hover {
   text-align: center;
   margin: 0px 70px 150px 70px;
 }
-.seventy {
-  color: rgb(17, 159, 224);
-}
-.fifty {
-  color: rgb(17, 159, 224);
-}
-.forty {
-  color: rgb(17, 159, 224);
-}
 .cloudy {
-  font-size: 35px;
+  font-size: 27px;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   color: #596aca;
   text-align: center;
-  position: relative;
-  top: -36px;
 }
 .humidity,
 .wind {
@@ -190,6 +170,7 @@ input:hover {
 .fahrenheitCelsius {
   font-size: 18px;
   position: relative;
+  font-family: "Raleway", sans-serif;
   top: -45px;
 }
 .openSource {
@@ -217,4 +198,7 @@ input:hover {
 }
 .fahrenheitLink:hover {
   text-decoration: none;
+}
+.forecastIcons {
+  width: 115px;
 }
