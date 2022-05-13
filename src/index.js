@@ -132,6 +132,12 @@ function fahrenheitClick(event) {
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function handleLocation(position) {
+  let apiKey = "993af96e9543b078265c47b2bab8efae";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(weather);
+}
+
 let fahrenheitTemperature = null;
 
 let fahrenheit = document.querySelector("#fahrenheit");
@@ -139,5 +145,13 @@ fahrenheit.addEventListener("click", fahrenheitClick);
 
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", celsiusClick);
+
+function displayCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(handleLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location");
+currentLocationButton.addEventListener("click", displayCurrentLocation);
 
 search("Portland");
