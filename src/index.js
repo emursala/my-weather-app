@@ -118,16 +118,16 @@ formInput.addEventListener("submit", citySearch);
 function celsiusClick(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
-  fahrenheit.classList.remove("fahrenheitLink");
-  celsius.classList.add("fahrenheitLink");
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
   let celsiusTemperature = (fahrenheitTemperature - 32) * (5 / 9);
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
 
 function fahrenheitClick(event) {
   event.preventDefault();
-  fahrenheit.classList.add("fahrenheitLink");
-  celsius.classList.remove("fahrenheitLink");
+  fahrenheit.classList.add("active");
+  celsius.classList.remove("active");
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }

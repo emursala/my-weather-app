@@ -192,11 +192,11 @@ input:hover {
   border: 2px solid #aacac4;
   border-radius: 50%;
 }
-.fahrenheitLink {
+.active {
   color: #000;
   cursor: default;
 }
-.fahrenheitLink:hover {
+.active:hover {
   text-decoration: none;
 }
 .forecastIcons {
